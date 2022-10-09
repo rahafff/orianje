@@ -1,0 +1,29 @@
+enum FiledTypeEnum{
+  ACADEMIC_STAGE,
+  CLASS_GROUP,
+  CLASS,
+  SECTION,
+  SUPPORT_TYPE,
+  STUDENT_TYPE,
+  SELECT,
+  CITIES,
+
+  DATE,
+  YEAR,
+  TEXT,
+  NUMBER,
+  MOBILE,
+
+  UPLOADER
+}
+enum ParsTypeEnum{
+  SELECT_OBJECT,
+  LIST_STRING,
+  VALUE,
+
+  UPLOADER
+}
+enum ParsValueEnum{
+  VALUE_OBJECT,
+  LIST_STRING_UPLOADER,
+}

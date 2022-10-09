@@ -1,0 +1,108 @@
+{
+    "@@locale": "ar",
+    "loading": "جار التحميل",
+    "pleaseEnterYourEmail": "الرجاء ادخال البريد الالكتروني",
+    "iHaveAnAccount": "لدي حساب",
+    "errorHappened": "حدث خطأ ما",
+    "errorLoadingData": "خطأ في تحميل البيانات",
+    "emailAddressIsRequired": "يرجى توفير البريد الالكتروني",
+
+
+
+    "paid": " مدفوعة",
+    "notPaid":" غير مدفوعة",
+    "payment": "الدفع",
+
+
+    "gallery": "المعرض",
+    "camera": "كاميرا",
+
+    "changePassSuccess": "تم تغير كلمة السر اعد تسجيل الدخول",
+    "oldPass": "كلمة السر القديمة",
+    "wrongPass": "كلمة السر القديمة غير صحيحة",
+
+    "changePass": "تغير كلمة السر",
+    "companyInfo": "معلومات الشركة",
+    "networkError": "خطأ في الاتصال",
+    "warnning": "حدث خطأ ما",
+    "newPassword": "كلمة السر الجديدة",
+    "password": "كلمة السر",
+    "invalidCredentials": "اسم المستخدم او كلمة المرور خاطئة",
+    "username": "اسم المستخدم",
+    "pleaseCompleteField": "أملء الحقل",
+    "passwordIsTooShort": "كلمة السر قصيرة",
+    "refresh": "تحديث",
+    "login": "تسجيل الدخول",
+
+    "invoices": "الفواتير",
+
+    "supplierName": "اسم الموزع",
+    "AddSupplierName": "اضف اسم الموزع",
+
+    "invoiceNumber": "رقم الفاتورة",
+    "AddInvoiceNumber": "اضف رقم الفاتورة",
+
+    "cashBookNumber": "رقم النقد",
+    "addCashBookNumber": "أضف رقم النقدر",
+
+    "mails": "الإيملات",
+    "employees": "الموظفين",
+
+    "mailNumber": "رقم البريد",
+    "addMailNumber": "أضف رقم البريد",
+
+    "format": "النمط",
+    "workHour": "ساعات العمل",
+    "workDay": "أيام العمل",
+    "startDate": "تاريخ البدء",
+    "endDate": "تاريخ الإنتهاء",
+    "search": "بحث",
+    "selectEmployee": "اختر الموظف",
+    "addWorkHour": "اضف ساعات العمل",
+    "addWorkDay": "اضف ساعات العمل",
+    "dateRange": "اختر التاريخ",
+    "from": "من",
+    "to": "إلى",
+    "mailType": "نمط البريد",
+    "addMailType": "أضف نمط البريد",
+    "seen": "تم المشاهدة",
+    "notSeen": "لم يشاهد",
+    "date": "التاريخ",
+    "inbox": "الوارد",
+    "sell": "بيع",
+    "buy": "شراء",
+    "invoiceType": "نوع الفاتورة",
+    "applyFilter": "تصنيف",
+    "attachments": "المرفقات",
+    "addInvoice": "إضافة فاتورة",
+
+    "takePicture": "إلتقط صورة",
+    "selectImage": "اختر صورة",
+    "selectDoc": "اختر ملف",
+    "close": "إغلاق",
+    "noAttachMail": "لايوجد مرفقات لهذا البريد",
+    "noAttachInvoice": "لا يوجد مرفقات لهذه الفاتورة",
+
+    "addMail": "إضافة بريد",
+    "searchForInvoiceNumAndName": "إبحث اسم الموزع او رقم الفاتورة",
+    "mailName": "mail name",
+    "addMailName": "add mail name",
+    "searchMailNameOrNumber": "أبحث اسم البريد أو الرقم",
+    "records": "السجلات",
+    "addRecord": "أضف سجل",
+    "paidSuccessfully": "تم دفع الفاتورة",
+    "unPaidSuccessfully": "تم إلغاء دفع الفاتورة",
+    "language": "اللغة",
+    "signOut": "تسجيل الخروج",
+    "selectMailFormat": "أختر نمط البريد",
+    "month": "الشهر",
+    "hour": "ساعة",
+    "day": "يوم",
+    "year": "السنة",
+    "appLock": "قفل التطبيق",
+    "accept": "قبول",
+    "deny": "رفض",
+    "senderName": "المرسل",
+    "edit": "تعديل"
+
+}

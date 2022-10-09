@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "8396185268",
+    "firebase_url": "https://school-a7af6.firebaseio.com",
+    "project_id": "school-a7af6",
+    "storage_bucket": "school-a7af6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:8396185268:android:4be70b285029017e0c81e1",
+        "android_client_info": {
+          "package_name": "co.bwire.oringe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "8396185268-sah0mf6h9b23vlasnoi5t5307cfhhunf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVLCn-9tY8WfLzfxA9w5JRWKZhHG-hzPw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "8396185268-sah0mf6h9b23vlasnoi5t5307cfhhunf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
