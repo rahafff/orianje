@@ -16,18 +16,13 @@ import 'package:oringe/module_splash/splash_routes.dart';
 import 'package:oringe/module_theme/service/theme_service/theme_service.dart';
 import 'package:oringe/utils/global/global_state_manager.dart';
 import 'package:oringe/utils/logger/logger.dart';
-import 'package:firebase_core/firebase_core.dart';
-// import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:injectable/injectable.dart';
-//import 'package:timeago/timeago.dart' as timeago;
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:lehttp_overrides/lehttp_overrides.dart';
 import 'package:device_info/device_info.dart';
 import 'dart:io' as p;
-// import 'package:firebase_analytics/firebase_analytics.dart';
-// import 'package:firebase_analytics/observer.dart';
 import 'package:simple_moment/simple_moment.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'module_change_pass/pass_module.dart';
@@ -46,7 +41,7 @@ void main() async {
     }
   }
   await HiveSetUp.init();
-  await Firebase.initializeApp();
+  // await Firebase.initializeApp();
   if (kIsWeb) {
   } else {
     // await FirebaseCrashlytics.instance.setCrashlyticsCollectionEnabled(true);

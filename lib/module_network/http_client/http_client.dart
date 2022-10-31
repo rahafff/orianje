@@ -1,6 +1,5 @@
 import 'dart:convert';
 import 'package:dio/dio.dart';
-import 'package:dio_firebase_performance/dio_firebase_performance.dart';
 import 'package:injectable/injectable.dart';
 import 'package:oringe/di/di_config.dart';
 import 'package:oringe/module_localization/service/localization_service/localization_service.dart';
@@ -12,7 +11,7 @@ class ApiClient {
   final Logger _logger;
   final String tag = 'ApiClient';
 
-  final performanceInterceptor = DioFirebasePerformanceInterceptor();
+  // final performanceInterceptor = DioFirebasePerformanceInterceptor();
 
   ApiClient(this._logger);
 
@@ -31,7 +30,7 @@ class ApiClient {
         connectTimeout: 60000,
       ));
       if (!kIsWeb) {
-        client.interceptors.add(performanceInterceptor);
+        // client.interceptors.add(performanceInterceptor);
       }
       if (headers != null) {
         if (headers['Authorization'] != null) {
@@ -92,7 +91,7 @@ class ApiClient {
       }
       // client.options.headers['Access-Control-Allow-Origin'] = '*';
       if (!kIsWeb) {
-        client.interceptors.add(performanceInterceptor);
+        // client.interceptors.add(performanceInterceptor);
       }
       var response = await client.post(
         url,
@@ -143,7 +142,7 @@ class ApiClient {
       }
       //  client.options.headers['Access-Control-Allow-Origin'] = '*';
       if (!kIsWeb) {
-        client.interceptors.add(performanceInterceptor);
+        // client.interceptors.add(performanceInterceptor);
       }
       var response = await client.put(
         url,
@@ -186,7 +185,7 @@ class ApiClient {
         connectTimeout: 60000,
       ));
       if (!kIsWeb) {
-        client.interceptors.add(performanceInterceptor);
+        // client.interceptors.add(performanceInterceptor);
       }
       if (headers != null) {
         if (headers['Authorization'] != null) {

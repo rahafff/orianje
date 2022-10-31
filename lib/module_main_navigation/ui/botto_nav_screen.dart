@@ -267,7 +267,6 @@ class _MainNavigationState extends State<MainNavigation> {
                             builder: ((context) => CustomDialogBox(
                                   title:  'Add an app lock to protect all your information inside the app',
                                 )));
-                        Navigator.pushNamed(context, NavRoutes.COMPANY_INFO);
                       },
                       child: Padding(
                         padding: const EdgeInsets.all(8.0),

@@ -274,13 +274,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "4.0.6"
-  dio_firebase_performance:
-    dependency: "direct main"
-    description:
-      name: dio_firebase_performance
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "0.3.1-dev.3"
   dotted_line:
     dependency: "direct main"
     description:
@@ -330,55 +323,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "4.6.1"
-  firebase:
-    dependency: transitive
-    description:
-      name: firebase
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "9.0.3"
-  firebase_core:
-    dependency: transitive
-    description:
-      name: firebase_core
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "1.20.0"
-  firebase_core_platform_interface:
-    dependency: transitive
-    description:
-      name: firebase_core_platform_interface
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "4.5.0"
-  firebase_core_web:
-    dependency: transitive
-    description:
-      name: firebase_core_web
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "1.7.1"
-  firebase_performance:
-    dependency: transitive
-    description:
-      name: firebase_performance
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "0.7.1+5"
-  firebase_performance_platform_interface:
-    dependency: transitive
-    description:
-      name: firebase_performance_platform_interface
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "0.0.1+8"
-  firebase_performance_web:
-    dependency: transitive
-    description:
-      name: firebase_performance_web
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "0.0.3+1"
   fixnum:
     dependency: transitive
     description:
@@ -690,7 +634,7 @@ packages:
     source: hosted
     version: "4.7.0"
   latlong2:
-    dependency: "direct main"
+    dependency: transitive
     description:
       name: latlong2
       url: "https://pub.dartlang.org"
@@ -738,27 +682,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.1.0"
-  location:
-    dependency: "direct main"
-    description:
-      name: location
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "4.4.0"
-  location_platform_interface:
-    dependency: transitive
-    description:
-      name: location_platform_interface
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "2.3.0"
-  location_web:
-    dependency: transitive
-    description:
-      name: location_web
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "3.1.1"
   logging:
     dependency: transitive
     description:
@@ -1324,27 +1247,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.3.1"
-  uni_links:
-    dependency: "direct main"
-    description:
-      name: uni_links
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "0.5.1"
-  uni_links_platform_interface:
-    dependency: transitive
-    description:
-      name: uni_links_platform_interface
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "1.0.0"
-  uni_links_web:
-    dependency: transitive
-    description:
-      name: uni_links_web
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "0.1.0"
   unicode:
     dependency: transitive
     description:
