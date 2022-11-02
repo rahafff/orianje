@@ -46,10 +46,13 @@ class MessageLookup extends MessageLookupByLibrary {
         "changePass": MessageLookupByLibrary.simpleMessage("تغير كلمة السر"),
         "close": MessageLookupByLibrary.simpleMessage("إغلاق"),
         "companyInfo": MessageLookupByLibrary.simpleMessage("معلومات الشركة"),
+        "createAccount": MessageLookupByLibrary.simpleMessage("Create account"),
         "date": MessageLookupByLibrary.simpleMessage("التاريخ"),
         "dateRange": MessageLookupByLibrary.simpleMessage("اختر التاريخ"),
         "day": MessageLookupByLibrary.simpleMessage("يوم"),
         "deny": MessageLookupByLibrary.simpleMessage("رفض"),
+        "dontHave":
+            MessageLookupByLibrary.simpleMessage("You don\'t have account"),
         "edit": MessageLookupByLibrary.simpleMessage("تعديل"),
         "emailAddressIsRequired": MessageLookupByLibrary.simpleMessage(
             "يرجى توفير البريد الالكتروني"),

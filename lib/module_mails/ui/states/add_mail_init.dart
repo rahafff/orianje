@@ -3,6 +3,7 @@ import 'dart:io';
 import 'package:badges/badges.dart';
 import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
+import 'package:image_picker/image_picker.dart';
 import 'package:oringe/abstracts/states/state.dart';
 import 'package:oringe/generated/l10n.dart';
 import 'package:oringe/module_auth/ui/widget/login_widgets/custem_button.dart';
@@ -26,6 +27,8 @@ class AddMailInitState extends States {
 
   PlatformFile? _selectedFile ;
   AttachRequest? _attachRequest;
+  final ImagePicker _picker = ImagePicker();
+
   final GlobalKey<FormState> _addInvoiceKey = GlobalKey<FormState>();
 
   List<MailType> types = [
@@ -180,8 +183,15 @@ underline: Container(),
                                     // extend subscription
                                     CustomTextButton(
                                       label: S.of(context).takePicture,
-                                      onPressed: () {
-
+                                      onPressed: () async {
+                                        Navigator.pop(context);
+                                        XFile? photo = await _picker.pickImage(source: ImageSource.camera);
+                                        if(photo !=null){
+                                          PlatformFile photoTofile =
+                                          PlatformFile(path: photo.path, name:photo.name, size: 500);
+                                          _selectedFile = photoTofile;
+                                          screenState.refresh();
+                                        }
                                       },
                                     ),
                                     Divider(

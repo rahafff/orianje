@@ -30,34 +30,35 @@ class TermAlert extends StatelessWidget {
                 BoxShadow(
                     color: Colors.black, offset: Offset(0, 10), blurRadius: 10),
               ]),
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: <Widget>[
-              Text(
-                "Our terms",
-                style: TextStyle(fontWeight: FontWeight.w600),
-              ),
-              Text(
-                S.of(context).terms),
-              Row(
-
-                children: [
-                  Spacer(),
-                  TextButton(
-                      onPressed: () {
-                        Navigator.pop(context);
-                      },
-                      child: Text(S.of(context).accept)),
-                  SizedBox(
-                    width: 15,
-                  ),
-                  TextButton(
-                      onPressed: () => exit(0),
-                      child: Text(S.of(context).deny)),
-                ],
-              )
-            ],
+          child: SingleChildScrollView(
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                Text(
+                  "Our terms",
+                  style: TextStyle(fontWeight: FontWeight.w600),
+                ),
+                Text(
+                  S.of(context).terms),
+                Row(
+                  children: [
+                    Spacer(),
+                    TextButton(
+                        onPressed: () {
+                          Navigator.pop(context);
+                        },
+                        child: Text(S.of(context).accept)),
+                    SizedBox(
+                      width: 15,
+                    ),
+                    TextButton(
+                        onPressed: () => exit(0),
+                        child: Text(S.of(context).deny)),
+                  ],
+                )
+              ],
+            ),
           ),
         ),
         Positioned(

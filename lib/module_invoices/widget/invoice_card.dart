@@ -1,3 +1,4 @@
+import 'package:badges/badges.dart';
 import 'package:flutter/material.dart';
 import 'package:oringe/generated/l10n.dart';
 import 'package:oringe/module_invoices/invoice_routes.dart';
@@ -6,6 +7,7 @@ import 'package:oringe/module_invoices/response/invoice_reponse.dart';
 import 'package:oringe/module_invoices/widget/custom_text.dart';
 import 'package:oringe/utils/components/custom_container.dart';
 import 'package:oringe/utils/images/images.dart';
+import 'package:rotated_corner_decoration/rotated_corner_decoration.dart';
 
 class InvoiceCard extends StatelessWidget {
   final InvoiceResponse response;
@@ -125,21 +127,25 @@ class Invoice2Card extends StatelessWidget {
               offset: Offset(0, 3), // changes position of shadow
             ),
           ],),
+          foregroundDecoration:   RotatedCornerDecoration(
+            color:response.type == 0 ? Colors.blue.shade200 : Colors.blue.shade700,
+            geometry: const BadgeGeometry(width: 70, height: 40, cornerRadius: 6),
+           textSpan: response.type == 0
+               ? TextSpan(
+            text: S.of(context).sell,)
+               : TextSpan(text: S.of(context).buy
+
+           ),
+          ),
           child: Padding(
             padding:
                 const EdgeInsetsDirectional.only(start: 12, end: 12, top: 12),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    CustomText(
-                      title: S.of(context).supplierName,
-                      body: response.supplierName ?? '',
-                    ),
-                    Text(response.date?.split('T').first ?? '')
-                  ],
+                CustomText(
+                  title: S.of(context).supplierName,
+                  body: response.supplierName ?? '',
                 ),
                 SizedBox(
                   height: 5,
@@ -149,38 +155,7 @@ class Invoice2Card extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     CustomText(title: S.of(context).invoiceNumber, body: response.invoiceNumber ?? ''),
-                    response.type == 0
-                        ? TextButton.icon(
-                            style: TextButton.styleFrom(
-                                backgroundColor: Colors.blue.shade200,
-                                shape: RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(5))),
-                            onPressed: () {},
-                            label: Text(
-                              S.of(context).sell,
-                              style: TextStyle(color: Colors.white),
-                            ),
-                            icon: Icon(
-                              Icons.arrow_upward,
-                              color: Colors.white,
-                            ),
-                          )
-                        : TextButton.icon(
-                            style: TextButton.styleFrom(
-                                backgroundColor: Colors.blue.shade500,
-                                shape: RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(5)), ),
-                            onPressed: () {},
-                            label: Text(
-                              S.of(context).buy,
-                              style: TextStyle(color: Colors.white),
-                            ),
-                            icon: Icon(
-                              Icons.arrow_downward,
-                              color: Colors.white,
-                            ),
-
-                          )
+                    Text(response.date?.split('T').first ?? '')
                   ],
                 ),
               ],

@@ -51,11 +51,14 @@ class MessageLookup extends MessageLookupByLibrary {
         "close": MessageLookupByLibrary.simpleMessage("Close"),
         "companyInfo": MessageLookupByLibrary.simpleMessage("Company info"),
         "confirm": MessageLookupByLibrary.simpleMessage("Confirm"),
+        "createAccount": MessageLookupByLibrary.simpleMessage("Create account"),
         "date": MessageLookupByLibrary.simpleMessage("Date"),
         "dateRange": MessageLookupByLibrary.simpleMessage("Date range"),
         "day": MessageLookupByLibrary.simpleMessage("Day"),
         "deny": MessageLookupByLibrary.simpleMessage("Deny"),
         "document": MessageLookupByLibrary.simpleMessage("My document"),
+        "dontHave":
+            MessageLookupByLibrary.simpleMessage("You don\'t have account"),
         "edit": MessageLookupByLibrary.simpleMessage("Edit"),
         "emailAddressIsRequired":
             MessageLookupByLibrary.simpleMessage("Email Address is Required"),

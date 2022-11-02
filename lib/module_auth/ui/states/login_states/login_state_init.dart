@@ -113,6 +113,10 @@ class LoginStateInit extends LoginState {
                     ),
                   ),
                 ),
+
+                SizedBox(
+                  height: 20,
+                ),
               ],
             ),
           ),

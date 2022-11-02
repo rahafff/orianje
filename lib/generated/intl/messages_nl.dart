@@ -53,11 +53,14 @@ class MessageLookup extends MessageLookupByLibrary {
         "close": MessageLookupByLibrary.simpleMessage("Sluiten"),
         "companyInfo": MessageLookupByLibrary.simpleMessage("Bedrijfs info"),
         "confirm": MessageLookupByLibrary.simpleMessage("Bevestig"),
+        "createAccount": MessageLookupByLibrary.simpleMessage("Create account"),
         "date": MessageLookupByLibrary.simpleMessage("Datum"),
         "dateRange": MessageLookupByLibrary.simpleMessage("Datum bereik"),
         "day": MessageLookupByLibrary.simpleMessage("dag"),
         "deny": MessageLookupByLibrary.simpleMessage("ontkennen"),
         "document": MessageLookupByLibrary.simpleMessage("Mijn document"),
+        "dontHave":
+            MessageLookupByLibrary.simpleMessage("You don\'t have account"),
         "edit": MessageLookupByLibrary.simpleMessage("Bewerk"),
         "emailAddressIsRequired":
             MessageLookupByLibrary.simpleMessage("E-mailadres is vereist"),

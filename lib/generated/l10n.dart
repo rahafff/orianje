@@ -989,6 +989,26 @@ class S {
       args: [],
     );
   }
+
+  /// `Create account`
+  String get createAccount {
+    return Intl.message(
+      'Create account',
+      name: 'createAccount',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `You don't have account`
+  String get dontHave {
+    return Intl.message(
+      'You don\'t have account',
+      name: 'dontHave',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

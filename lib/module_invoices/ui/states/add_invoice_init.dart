@@ -11,6 +11,7 @@ import 'package:oringe/module_invoices/ui/screen/add_invoice_screen.dart';
 import 'package:oringe/utils/components/custom_feild.dart';
 import 'package:oringe/utils/components/custom_text_button.dart';
 import 'package:oringe/utils/images/images.dart';
+import 'package:image_picker/image_picker.dart';
 
 class AddInvoiceInitState extends States {
   final AddInvoiceScreenState screenState;
@@ -25,6 +26,8 @@ class AddInvoiceInitState extends States {
 
   PlatformFile? _selectedFile ;
   AttachRequest? _attachRequest;
+
+  final ImagePicker _picker = ImagePicker();
   final GlobalKey<FormState> _addInvoiceKey = GlobalKey<FormState>();
   @override
   Widget getUI(BuildContext context) {
@@ -227,7 +230,17 @@ class AddInvoiceInitState extends States {
                                     // extend subscription
                                     CustomTextButton(
                                       label: S.of(context).takePicture,
-                                      onPressed: () {},
+                                      onPressed: () async{
+                                        Navigator.pop(context);
+                                        XFile? photo = await _picker.pickImage(source: ImageSource.camera);
+                                        if(photo !=null){
+                                          PlatformFile photoTofile =
+                                          PlatformFile(path: photo.path, name:photo.name, size: 500);
+                                          _selectedFile = photoTofile;
+                                          screenState.refresh();
+                                        }
+
+                                      },
                                     ),
                                     Divider(
                                       indent: 16,
