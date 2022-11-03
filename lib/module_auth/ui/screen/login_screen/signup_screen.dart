@@ -1,12 +1,7 @@
 import 'dart:async';
-import 'package:flutter_email_sender/flutter_email_sender.dart';
-import 'package:oringe/module_auth/state_manager/login_state_manager/login_state_manager.dart';
 import 'package:oringe/module_auth/state_manager/login_state_manager/signup_state_manager.dart';
 import 'package:oringe/module_auth/ui/states/login_states/login_state.dart';
-import 'package:oringe/module_auth/ui/states/login_states/login_state_init.dart';
 import 'package:oringe/module_auth/ui/states/login_states/signup_state_init.dart';
-import 'package:oringe/module_auth/ui/widget/login_widgets/terms_alert.dart';
-import 'package:oringe/module_main_navigation/nav_routes.dart';
 import 'package:oringe/utils/components/fixed_container.dart';
 import 'package:flutter/material.dart';
 import 'package:injectable/injectable.dart';
@@ -36,33 +31,6 @@ class SignUpScreenState extends State<SignUpScreen> {
     text: 'Mail body.',
   );
 
-  Future<void> sendEmail() async {
-    loadingSnapshot = AsyncSnapshot.waiting();
-    final Email email = Email(
-      body: _bodyController.text,
-      subject: _subjectController.text,
-      recipients: [_recipientController.text],
-      isHTML: false,
-    );
-
-    String platformResponse;
-
-    try {
-      await FlutterEmailSender.send(email);
-      platformResponse = 'success';
-    } catch (error) {
-      print(error);
-      platformResponse = error.toString();
-    }
-
-    if (!mounted) return;
-
-    ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(
-        content: Text(platformResponse),
-      ),
-    );
-  }
 
   void refresh() {
     if (mounted) setState(() {});

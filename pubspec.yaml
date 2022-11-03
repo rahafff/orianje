@@ -139,7 +139,7 @@ dependencies:
 #  open_file: ^3.2.1
   pin_code_fields: ^7.4.0
   open_file_safe: ^3.2.3
-  flutter_email_sender: ^5.1.0
+#  flutter_email_sender: ^5.1.0
 
 
 
