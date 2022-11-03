@@ -1,6 +1,6 @@
 import 'package:oringe/generated/l10n.dart';
-import 'package:oringe/module_auth/authorization_routes.dart';
 import 'package:oringe/module_auth/ui/screen/login_screen/login_screen.dart';
+import 'package:oringe/module_auth/ui/screen/login_screen/signup_screen.dart';
 import 'package:oringe/module_auth/ui/states/login_states/login_state.dart';
 import 'package:oringe/module_auth/ui/widget/login_widgets/custom_field.dart';
 import 'package:oringe/module_main_navigation/nav_routes.dart';
@@ -11,8 +11,8 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import '../../widget/login_widgets/custem_button.dart';
 
-class LoginStateInit extends LoginState {
-  LoginStateInit(LoginScreenState screen, {String? error}) : super(screen) {
+class SignUpStateInit extends SignUpState {
+  SignUpStateInit(SignUpScreenState screen, {String? error}) : super(screen) {
     if (error != null) {
       CustomFlushBarHelper.createError(
               title: S.current.warnning, message: error)
@@ -21,6 +21,8 @@ class LoginStateInit extends LoginState {
   }
   TextEditingController usernameController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
+  TextEditingController emailController = TextEditingController();
+
   final GlobalKey<FormState> _loginKey = GlobalKey<FormState>();
   @override
   Widget getUI(BuildContext context) {
@@ -56,7 +58,17 @@ class LoginStateInit extends LoginState {
                   borderRadius: 15,
                 ),
                 SizedBox(
-                  height: 45,
+                  height: 20,
+                ),
+                CustomLoginFormField(
+                  hintText: S.of(context).emailAddress,
+                  validator: true,
+                  controller: emailController,
+                  preIcon: Icon(Icons.email),
+                  borderRadius: 15,
+                ),
+                SizedBox(
+                  height: 20,
                 ),
                 CustomLoginFormField(
                   hintText: S.of(context).password,
@@ -72,62 +84,19 @@ class LoginStateInit extends LoginState {
                 CustomButton(
                   buttonTab: () {
                     if (_loginKey.currentState!.validate()) {
-                      screen.loginClient(
-                          usernameController.text.trim(), passwordController.text.trim());
+                      screen.signUpClient(
+                          usernameController.text.trim(),emailController.text.trim(), passwordController.text.trim());
                     }
                   },
                   loading: screen.loadingSnapshot.connectionState ==
                       ConnectionState.waiting,
-                  text: S.of(context).login,
+                  text: S.of(context).signUp,
                   bgColor: Theme.of(context).primaryColor,
                   textColor: Colors.white,
                 ),
                 SizedBox(
                   height: 20,
                 ),
-                Center(
-                  child: RichText(
-                    text: TextSpan(
-                        children: [
-                          TextSpan(
-                              text: "Powered by ",
-                              style: TextStyle(fontSize: 15, color: Colors.grey)
-                          ),
-                          TextSpan(
-                            text: "Tello Technology",
-                            style: TextStyle(
-                              fontSize: 18,
-                                color: Colors.black,
-                                fontWeight: FontWeight.bold,
-                                decoration: TextDecoration.underline
-                            ),
-                              recognizer: TapGestureRecognizer()
-                                ..onTap = () async {
-                                  if (await canLaunch("https://Tellotech.eu") == true) {
-                                    launch("https://Tellotech.eu");
-                                  } else {
-                                    print("Can't launch URL");
-                                  }
-                                }
-                          ),
-                        ]
-                    ),
-                  ),
-                ),
-
-                SizedBox(
-                  height: 20,
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                  Text(S.of(context).dontHave ),
-                  InkWell(
-                      onTap: (){
-                        Navigator.pushNamed(context, AuthorizationRoutes.REGISTER_SCREEN);
-                      },
-                      child: Text(S.of(context).createAccount , style: TextStyle(color: Theme.of(context).primaryColor), )),
-                ],)
               ],
             ),
           ),

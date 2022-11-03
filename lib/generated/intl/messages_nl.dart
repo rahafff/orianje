@@ -60,8 +60,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "deny": MessageLookupByLibrary.simpleMessage("ontkennen"),
         "document": MessageLookupByLibrary.simpleMessage("Mijn document"),
         "dontHave":
-            MessageLookupByLibrary.simpleMessage("You don\'t have account"),
+            MessageLookupByLibrary.simpleMessage("You don\'t have account ? "),
         "edit": MessageLookupByLibrary.simpleMessage("Bewerk"),
+        "emailAddress": MessageLookupByLibrary.simpleMessage("E-mailadres"),
         "emailAddressIsRequired":
             MessageLookupByLibrary.simpleMessage("E-mailadres is vereist"),
         "employees": MessageLookupByLibrary.simpleMessage("Medewerkers"),
@@ -133,6 +134,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "senderName": MessageLookupByLibrary.simpleMessage("afzender"),
         "settings": MessageLookupByLibrary.simpleMessage("Instellingen"),
         "signOut": MessageLookupByLibrary.simpleMessage("Uitloggen"),
+        "signUp": MessageLookupByLibrary.simpleMessage("Aanmelden"),
         "startDate": MessageLookupByLibrary.simpleMessage("Begin datum"),
         "supplierName":
             MessageLookupByLibrary.simpleMessage("Naam leverancier"),

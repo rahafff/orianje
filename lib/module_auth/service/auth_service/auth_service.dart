@@ -94,4 +94,9 @@ class AuthService {
     return _prefsHelper.getClientId();
   }
 
+  Future<void> signUp () async {
+   await Future.delayed(Duration(seconds: 2));
+
+  }
+
 }

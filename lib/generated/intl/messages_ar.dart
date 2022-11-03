@@ -52,8 +52,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "day": MessageLookupByLibrary.simpleMessage("يوم"),
         "deny": MessageLookupByLibrary.simpleMessage("رفض"),
         "dontHave":
-            MessageLookupByLibrary.simpleMessage("You don\'t have account"),
+            MessageLookupByLibrary.simpleMessage("You don\'t have account ? "),
         "edit": MessageLookupByLibrary.simpleMessage("تعديل"),
+        "emailAddress":
+            MessageLookupByLibrary.simpleMessage("البريد الإلكتروني"),
         "emailAddressIsRequired": MessageLookupByLibrary.simpleMessage(
             "يرجى توفير البريد الالكتروني"),
         "employees": MessageLookupByLibrary.simpleMessage("الموظفين"),
@@ -117,6 +119,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "sell": MessageLookupByLibrary.simpleMessage("بيع"),
         "senderName": MessageLookupByLibrary.simpleMessage("المرسل"),
         "signOut": MessageLookupByLibrary.simpleMessage("تسجيل الخروج"),
+        "signUp": MessageLookupByLibrary.simpleMessage("إنشاء حساب"),
         "startDate": MessageLookupByLibrary.simpleMessage("تاريخ البدء"),
         "supplierName": MessageLookupByLibrary.simpleMessage("اسم الموزع"),
         "takePicture": MessageLookupByLibrary.simpleMessage("إلتقط صورة"),

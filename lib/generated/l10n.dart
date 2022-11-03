@@ -1000,11 +1000,31 @@ class S {
     );
   }
 
-  /// `You don't have account`
+  /// `You don't have account ? `
   String get dontHave {
     return Intl.message(
-      'You don\'t have account',
+      'You don\'t have account ? ',
       name: 'dontHave',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Email address`
+  String get emailAddress {
+    return Intl.message(
+      'Email address',
+      name: 'emailAddress',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `SignUp`
+  String get signUp {
+    return Intl.message(
+      'SignUp',
+      name: 'signUp',
       desc: '',
       args: [],
     );

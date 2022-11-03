@@ -58,8 +58,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "deny": MessageLookupByLibrary.simpleMessage("Deny"),
         "document": MessageLookupByLibrary.simpleMessage("My document"),
         "dontHave":
-            MessageLookupByLibrary.simpleMessage("You don\'t have account"),
+            MessageLookupByLibrary.simpleMessage("You don\'t have account ? "),
         "edit": MessageLookupByLibrary.simpleMessage("Edit"),
+        "emailAddress": MessageLookupByLibrary.simpleMessage("Email address"),
         "emailAddressIsRequired":
             MessageLookupByLibrary.simpleMessage("Email Address is Required"),
         "employees": MessageLookupByLibrary.simpleMessage("Employees"),
@@ -130,6 +131,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "senderName": MessageLookupByLibrary.simpleMessage("Sender"),
         "settings": MessageLookupByLibrary.simpleMessage("Settings"),
         "signOut": MessageLookupByLibrary.simpleMessage("Sign out"),
+        "signUp": MessageLookupByLibrary.simpleMessage("SignUp"),
         "startDate": MessageLookupByLibrary.simpleMessage("Start date"),
         "supplierName": MessageLookupByLibrary.simpleMessage("Supplier name"),
         "takePicture": MessageLookupByLibrary.simpleMessage("Take picture"),

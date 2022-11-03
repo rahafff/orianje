@@ -1,4 +1,5 @@
 enum AuthStatus {
   AUTHORIZED_CLIENT,
+  SIGNUP_SUCCESS,
 
 }
