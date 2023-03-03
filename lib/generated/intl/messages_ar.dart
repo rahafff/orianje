@@ -38,6 +38,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "addWorkDay": MessageLookupByLibrary.simpleMessage("اضف ساعات العمل"),
         "addWorkHour": MessageLookupByLibrary.simpleMessage("اضف ساعات العمل"),
         "appLock": MessageLookupByLibrary.simpleMessage("قفل التطبيق"),
+        "appLockMessg": MessageLookupByLibrary.simpleMessage(
+            "أضف قفل التطبيق لحماية جميع معلوماتك داخل التطبيق"),
         "applyFilter": MessageLookupByLibrary.simpleMessage("تصنيف"),
         "attachments": MessageLookupByLibrary.simpleMessage("المرفقات"),
         "buy": MessageLookupByLibrary.simpleMessage("شراء"),
@@ -46,13 +48,12 @@ class MessageLookup extends MessageLookupByLibrary {
         "changePass": MessageLookupByLibrary.simpleMessage("تغير كلمة السر"),
         "close": MessageLookupByLibrary.simpleMessage("إغلاق"),
         "companyInfo": MessageLookupByLibrary.simpleMessage("معلومات الشركة"),
-        "createAccount": MessageLookupByLibrary.simpleMessage("Create account"),
+        "createAccount": MessageLookupByLibrary.simpleMessage("إنشاء حساب"),
         "date": MessageLookupByLibrary.simpleMessage("التاريخ"),
         "dateRange": MessageLookupByLibrary.simpleMessage("اختر التاريخ"),
         "day": MessageLookupByLibrary.simpleMessage("يوم"),
         "deny": MessageLookupByLibrary.simpleMessage("رفض"),
-        "dontHave":
-            MessageLookupByLibrary.simpleMessage("You don\'t have account ? "),
+        "dontHave": MessageLookupByLibrary.simpleMessage("ليس لديك حساب ؟ "),
         "edit": MessageLookupByLibrary.simpleMessage("تعديل"),
         "emailAddress":
             MessageLookupByLibrary.simpleMessage("البريد الإلكتروني"),

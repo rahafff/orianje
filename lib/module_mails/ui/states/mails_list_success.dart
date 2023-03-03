@@ -381,7 +381,10 @@ class MailsStateSuccess extends States {
                                         ),
                                         InkWell(
                                           onTap: (){
-                                            showDatePicker(context: context,initialDate: DateTime.now(),firstDate: DateTime.now(),lastDate: DateTime(2025, 1, 1) );
+                                            showDatePicker(context: context,
+                                                initialDate: DateTime.now(),
+                                                firstDate: DateTime(1900, 1, 1),
+                                                lastDate: DateTime(2025, 1, 1) );
                                           },
                                           child: Container(
                                             decoration: new BoxDecoration(
@@ -407,7 +410,8 @@ class MailsStateSuccess extends States {
                                         ),
                                         InkWell(
                                           onTap: (){
-                                            showDatePicker(context: context,initialDate: DateTime.now(),firstDate: DateTime.now(),lastDate: DateTime(2025, 1, 1) );
+                                            showDatePicker(context: context,
+                                                initialDate: DateTime.now(),firstDate: DateTime(1900, 1, 1),lastDate: DateTime(2025, 1, 1) );
                                           },
                                           child: Container(
                                             decoration: new BoxDecoration(

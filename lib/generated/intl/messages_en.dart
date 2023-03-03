@@ -39,6 +39,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "addWorkDay": MessageLookupByLibrary.simpleMessage("Add work day"),
         "addWorkHour": MessageLookupByLibrary.simpleMessage("Add work hour"),
         "appLock": MessageLookupByLibrary.simpleMessage("App lock"),
+        "appLockMessg": MessageLookupByLibrary.simpleMessage(
+            "Add an app lock to protect all your information inside the app"),
         "applyFilter": MessageLookupByLibrary.simpleMessage("Apply filter"),
         "attachments": MessageLookupByLibrary.simpleMessage("Attachments"),
         "buy": MessageLookupByLibrary.simpleMessage("Buy"),

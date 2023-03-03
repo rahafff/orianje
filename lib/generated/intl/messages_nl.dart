@@ -43,6 +43,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Werkuur toevoegen"),
         "appLock":
             MessageLookupByLibrary.simpleMessage("applicatie vergrendeling"),
+        "appLockMessg": MessageLookupByLibrary.simpleMessage(
+            "Voeg een app-vergrendeling toe om al uw informatie in de app te beschermen"),
         "applyFilter": MessageLookupByLibrary.simpleMessage("Filter toepassen"),
         "attachments": MessageLookupByLibrary.simpleMessage("Bijlagen"),
         "buy": MessageLookupByLibrary.simpleMessage("Kopen"),

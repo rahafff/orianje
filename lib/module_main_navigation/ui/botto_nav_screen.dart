@@ -265,7 +265,7 @@ class _MainNavigationState extends State<MainNavigation> {
                         showDialog(
                             context: context,
                             builder: ((context) => CustomDialogBox(
-                                  title:  'Add an app lock to protect all your information inside the app',
+                                  title:  S.of(context).appLockMessg,
                                 )));
                       },
                       child: Padding(

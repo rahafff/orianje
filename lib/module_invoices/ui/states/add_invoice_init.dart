@@ -184,7 +184,7 @@ class AddInvoiceInitState extends States {
                               _dateTime = await showDatePicker(
                                 context: context,
                                 initialDate: DateTime.now(),
-                                firstDate: DateTime.now(),
+                                firstDate: DateTime(1900, 1, 1),
                                 lastDate: DateTime(2025, 1, 1),
                               );
 

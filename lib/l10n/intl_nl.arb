@@ -98,6 +98,6 @@
   "createAccount": "Create account",
   "dontHave": "You don't have account ? ",
   "emailAddress": "E-mailadres",
-  "signUp": "Aanmelden"
-
+  "signUp": "Aanmelden",
+"appLockMessg":"Voeg een app-vergrendeling toe om al uw informatie in de app te beschermen"
 }

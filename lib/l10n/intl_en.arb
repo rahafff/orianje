@@ -110,7 +110,8 @@
     "createAccount": "Create account",
     "dontHave": "You don't have account ? ",
     "emailAddress": "Email address",
-    "signUp": "SignUp"
+    "signUp": "SignUp",
+    "appLockMessg": "Add an app lock to protect all your information inside the app"
 
 
 }

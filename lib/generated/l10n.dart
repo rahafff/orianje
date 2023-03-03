@@ -1029,6 +1029,16 @@ class S {
       args: [],
     );
   }
+
+  /// `Add an app lock to protect all your information inside the app`
+  String get appLockMessg {
+    return Intl.message(
+      'Add an app lock to protect all your information inside the app',
+      name: 'appLockMessg',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
